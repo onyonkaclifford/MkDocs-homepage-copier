@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/onyonkaclifford/MkDocs-homepage-copier/blob/main/LICENSE)
+[![PyPI version](https://badge.fury.io/py/mkdocs-homepage-copier.svg)](https://pypi.org/project/mkdocs-homepage-copier/)
 [![Linting workflow](https://github.com/onyonkaclifford/MkDocs-homepage-copier/actions/workflows/linting.yml/badge.svg?branch=main)](https://github.com/onyonkaclifford/MkDocs-homepage-copier/actions/workflows/linting.yml)
 [![SAST workflow](https://github.com/onyonkaclifford/MkDocs-homepage-copier/actions/workflows/SAST.yml/badge.svg?branch=main)](https://github.com/onyonkaclifford/MkDocs-homepage-copier/actions/workflows/SAST.yml)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
@@ -21,9 +22,24 @@ this process.
 
 ## Usage
 
-- Build the package: `pip wheel --no-deps . -w dist`
-- Install the resultant wheel: `pip install dist/mkdocs_homepage_copier-0.0.1-py3-none-any.whl`
-- Add `mkdocs-homepage-copier` entry under the `plugins` section of `mkdocs.yml`
+Install the package via pip:
+
+- `pip install mkdocs-homepage-copier`
+
+Or install the package from source:
+
+- `git clone https://github.com/onyonkaclifford/MkDocs-homepage-copier.git`
+- `cd MkDocs-homepage-copier`
+- `pip wheel --no-deps . -w dist`
+- `pip install dist/mkdocs_homepage_copier-{version}-py3-none-any.whl`
+
+Enable the plugin in `mkdocs.yml`:
+
+```yaml
+plugins:
+  - search
+  - mkdocs-homepage-copier
+```
 
 If the file to be copied is not named `README.md` and/or the destination path isn't `docs/index.md`, use the parameters
 `src` and `dest` to identify the correct file to be copied and the correct destination path it's to be copied to. Either
