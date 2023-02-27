@@ -1,6 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/onyonkaclifford/MkDocs-homepage-copier/blob/main/LICENSE)
 [![PyPI version](https://badge.fury.io/py/mkdocs-homepage-copier.svg)](https://pypi.org/project/mkdocs-homepage-copier/)
 [![CI workflow](https://github.com/onyonkaclifford/MkDocs-homepage-copier/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/onyonkaclifford/MkDocs-homepage-copier/actions/workflows/CI.yml)
+[![Downloads](https://static.pepy.tech/badge/mkdocs-homepage-copier)](https://pypi.org/project/mkdocs-homepage-copier/)
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Code style: flake8](https://img.shields.io/badge/code%20style-flake8-orange.svg)](https://github.com/pycqa/flake8)
