@@ -10,7 +10,7 @@ with open(dir_path + "/README.md") as f:
 setuptools.setup(
     name="mkdocs-homepage-copier",
     version="0.0.2",
-    description="Copy homepage file",
+    description="Reuse the README.md file by copying it into the docs/ directory as the docs/index.md file",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Clifford Onyonka",
