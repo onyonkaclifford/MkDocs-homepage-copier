@@ -39,6 +39,8 @@ Enable the plugin in `mkdocs.yml`:
 plugins:
   - search
   - mkdocs-homepage-copier
+nav:
+  - Home: index.md
 ```
 
 If the file to be copied is not named `README.md` and/or the destination path isn't `docs/index.md`, use the parameters
@@ -51,4 +53,6 @@ plugins:
   - mkdocs-homepage-copier:
       src: source.md
       dest: path/to/destination.md
+nav:
+  - Navigation option: path/to/destination.md
 ```
