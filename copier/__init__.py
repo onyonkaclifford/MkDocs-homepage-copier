@@ -9,6 +9,7 @@ class HomepageCopier(BasePlugin):
     config_scheme = (
         ("src", config_options.Type(str, default="README.md")),
         ("dest", config_options.Type(str, default="docs/index.md")),
+        ("copy", config_options.Type(bool, True)),
     )
 
     def clean_up(self):
@@ -17,7 +18,10 @@ class HomepageCopier(BasePlugin):
 
     def on_config(self, config):
         self.clean_up()
-        shutil.copy(self.config["src"], self.config["dest"])
+
+        if self.config["copy"]:
+            shutil.copy(self.config["src"], self.config["dest"])
+
         return config
 
     def on_post_build(self, config):
