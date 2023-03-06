@@ -20,6 +20,25 @@ jobs:
           isort --profile black . -c -v
           black --check .
           flake8 .
+  testing:
+    name: Testing
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      - name: Run testing
+        run: |
+          coverage run --source="copier" -m pytest
+          coverage report
   SAST:
     name: SAST
     runs-on: ubuntu-latest

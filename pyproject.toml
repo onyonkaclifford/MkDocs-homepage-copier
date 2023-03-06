@@ -21,4 +21,4 @@ exclude = '''
 '''
 
 [tool.bandit]
-exclude_dirs = [".tox", "venv"]
+exclude_dirs = [".tox", "venv", "tests"]

@@ -19,6 +19,13 @@ this process.
 - Install git hook scripts: `pre-commit install`
 - (optional) Run against all files: `pre-commit run --all-files`
 
+## Testing
+
+To run tests:
+
+- Install pytest and coverage: `pip install pytest coverage`
+- Run tests: `coverage run --source="copier" -m pytest`
+- (optional) View coverage report: `coverage report`
 
 ## Usage
 
