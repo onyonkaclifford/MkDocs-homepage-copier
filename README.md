@@ -73,3 +73,20 @@ plugins:
   - mkdocs-homepage-copier:
       copy: false
 ```
+
+To copy extra files in addition to the homepage file, use the `extras` parameter.
+
+```yaml
+plugins:
+  - search
+  - mkdocs-homepage-copier:
+      src: source.md
+      copy: false
+      extras:
+        - src: path/to/source1.md
+          dest: path/to/destination1.md
+          copy: true
+        - src: path/to/source2.md
+          dest: path/to/destination2.md
+          copy: false
+```
