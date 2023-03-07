@@ -64,12 +64,12 @@ nav:
   - Navigation option: path/to/destination.md
 ```
 
-To disable mkdocs-homepage-copier, set the `copy` parameter to `False`. To re-enable, set it to `True` or remove it from
-`mkdocs.yml`, as it's set to `True` by default.
+To disable mkdocs-homepage-copier, set the `copy` parameter to `false`. To re-enable, set it to `true` or remove it from
+`mkdocs.yml`, as it's set to `true` by default.
 
 ```yaml
 plugins:
   - search
   - mkdocs-homepage-copier:
-      copy: False
+      copy: false
 ```

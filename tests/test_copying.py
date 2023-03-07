@@ -26,10 +26,10 @@ def test_homepage_copy_true():
     os.makedirs(temp_dir)
 
     _ = copier.on_config(config)
-    assert os.path.exists(os.path.join(dest_file))
+    assert os.path.exists(dest_file)
 
     copier.on_post_build(config)
-    assert not os.path.exists(os.path.join(dest_file))
+    assert not os.path.exists(dest_file)
 
     clean_up(temp_dir)
 
@@ -49,6 +49,6 @@ def test_homepage_copy_false():
     os.makedirs(temp_dir)
 
     _ = copier.on_config(config)
-    assert not os.path.exists(os.path.join(dest_file))
+    assert not os.path.exists(dest_file)
 
     clean_up(temp_dir)

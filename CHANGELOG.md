@@ -6,6 +6,10 @@ and this library adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Default option for copy homepage file (set to `True`, instead of `None` which automatically defaulted to `False`)
+
 ## [0.0.3] - 2023-03-06
 
 ### Added

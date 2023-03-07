@@ -9,7 +9,7 @@ class HomepageCopier(BasePlugin):
     config_scheme = (
         ("src", config_options.Type(str, default="README.md")),
         ("dest", config_options.Type(str, default="docs/index.md")),
-        ("copy", config_options.Type(bool, True)),
+        ("copy", config_options.Type(bool, default=True)),
     )
 
     def clean_up(self):
