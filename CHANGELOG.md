@@ -6,6 +6,8 @@ and this library adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] - 2023-03-07
+
 ### Added
 
 - Option to copy extra files in addition to the homepage file
@@ -13,6 +15,10 @@ and this library adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 - Default option for copy homepage file (set to `True`, instead of `None` which automatically defaulted to `False`)
+
+### Removed
+
+- Tests directory from wheel artifact when building
 
 ## [0.0.3] - 2023-03-06
 
