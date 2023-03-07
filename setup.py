@@ -18,7 +18,7 @@ setuptools.setup(
     maintainer="Clifford Onyonka",
     maintainer_email="clifford.onyonka@8teq.co.ke",
     url="https://github.com/onyonkaclifford/MkDocs-homepage-copier",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=["tests"]),
     license="MIT License",
     include_package_data=True,
     install_requires=[
