@@ -19,7 +19,7 @@ setuptools.setup(
     maintainer_email="clifford.onyonka@8teq.co.ke",
     url="https://github.com/onyonkaclifford/MkDocs-homepage-copier",
     packages=setuptools.find_packages(exclude=["tests"]),
-    license="MIT License",
+    license="MIT",
     include_package_data=True,
     install_requires=[
         "mkdocs",
@@ -27,6 +27,7 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
+        "License :: OSI Approved :: MIT License",
     ],
     python_requires=">=3.7",
     entry_points={
