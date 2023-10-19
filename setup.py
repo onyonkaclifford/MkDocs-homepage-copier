@@ -9,14 +9,14 @@ with open(dir_path + "/README.md") as f:
 
 setuptools.setup(
     name="mkdocs-homepage-copier",
-    version="0.0.4",
+    version="1.0.0",
     description="Reuse the README.md file by copying it into the docs/ directory as the docs/index.md file",
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Clifford Onyonka",
-    author_email="clifford.onyonka@8teq.co.ke",
+    author_email="jsjamessakho@gmail.com",
     maintainer="Clifford Onyonka",
-    maintainer_email="clifford.onyonka@8teq.co.ke",
+    maintainer_email="jsjamessakho@gmail.com",
     url="https://github.com/onyonkaclifford/MkDocs-homepage-copier",
     packages=setuptools.find_packages(exclude=["tests"]),
     license="MIT",
